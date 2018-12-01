@@ -1,10 +1,10 @@
 package com.ys.autoconfigure.service;
 
 /**
- * 计算服务
+ * @author HuaDong
+ * @date 2018/12/1 21:02
  *
- * @author 小马哥
- * @since 2018/5/15
+ * 计算服务
  */
 public interface CalculateService {
 

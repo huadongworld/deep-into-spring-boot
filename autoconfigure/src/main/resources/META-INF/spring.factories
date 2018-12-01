@@ -1,0 +1,3 @@
+# 自定义自动装配
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.ys.autoconfigure.configuration.HelloWorldAutoConfiguration

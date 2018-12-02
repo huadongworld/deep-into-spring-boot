@@ -3,3 +3,8 @@
 org.springframework.context.ApplicationContextInitializer=\
 com.ys.application.context.AfterHelloWorldApplicationContextInitializer,\
 com.ys.application.context.HelloWorldApplicationContextInitializer
+
+# 加载应用事件监听器
+org.springframework.context.ApplicationListener=\
+com.ys.application.listener.AfterHelloWorldApplicationListener,\
+com.ys.application.listener.HelloWorldApplicationListener

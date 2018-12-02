@@ -1,0 +1,5 @@
+
+# 初始化加载
+org.springframework.context.ApplicationContextInitializer=\
+com.ys.application.context.AfterHelloWorldApplicationContextInitializer,\
+com.ys.application.context.HelloWorldApplicationContextInitializer

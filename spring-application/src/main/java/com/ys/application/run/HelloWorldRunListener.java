@@ -24,31 +24,31 @@ public class HelloWorldRunListener implements SpringApplicationRunListener {
 
     @Override
     public void environmentPrepared(ConfigurableEnvironment environment) {
-
+        System.out.println("HelloWorldRunListener.environmentPrepared()...");
     }
 
     @Override
     public void contextPrepared(ConfigurableApplicationContext context) {
-
+        System.out.println("HelloWorldRunListener.contextPrepared()...");
     }
 
     @Override
     public void contextLoaded(ConfigurableApplicationContext context) {
-
+        System.out.println("HelloWorldRunListener.contextLoaded()...");
     }
 
     @Override
     public void started(ConfigurableApplicationContext context) {
-
+        System.out.println("HelloWorldRunListener.started()...");
     }
 
     @Override
     public void running(ConfigurableApplicationContext context) {
-
+        System.out.println("HelloWorldRunListener.running()...");
     }
 
     @Override
     public void failed(ConfigurableApplicationContext context, Throwable exception) {
-
+        System.out.println("HelloWorldRunListener.failed()...");
     }
 }

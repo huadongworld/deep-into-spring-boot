@@ -66,4 +66,19 @@ public class HelloWorldAsyncController {
         System.out.println("HelloWorldAsyncController[" + threadName + "]: " + object);
     }
 
+    //================================================Callable实现=====================================================
+
+    @GetMapping("/callable-hello-world")
+    public Callable<String> callableHelloWorld() {
+
+        final long startTime = System.currentTimeMillis();
+        println("Hello,World");
+
+        return () -> {
+            long costTime = System.currentTimeMillis() - startTime;
+            println("执行计算结果，消耗：" + costTime + " ms.");
+            return "Hello,World";
+        };
+    }
+
 }

@@ -28,6 +28,18 @@ public class WebFluxApplication {
         SpringApplication.run(WebFluxApplication.class, args);
     }
 
+    @GetMapping("/mvc")
+    public String mvc() {
+        println("mvc");
+        return "MVC";
+    }
+
+    @GetMapping("/mono")
+    public Mono<String> mono() {
+        println("mono");
+        return Mono.just("Mono");
+    }
+
     @Bean
     public RouterFunction<ServerResponse> routerFunction() {
 

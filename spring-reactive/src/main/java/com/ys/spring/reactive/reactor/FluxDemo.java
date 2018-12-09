@@ -1,9 +1,13 @@
 package com.ys.spring.reactive.reactor;
 
+import org.junit.jupiter.api.Test;
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
 import reactor.core.publisher.Flux;
 import reactor.core.scheduler.Schedulers;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * @author HuaDong
@@ -74,10 +78,27 @@ public class FluxDemo {
                     }
                 })
         ;
+
     }
 
     private static void println(Object object) {
         String threadName = Thread.currentThread().getName();
         System.out.println("[线程：" + threadName + "] " + object);
+    }
+
+    /**
+     * Reactive Streams 与 Java 8 Stream 的区别 ：
+     * Spring Reactor 的 API 看上去和 Java 8 Stream 很像，但是实现原理有很大的差别
+     * 前者是一种 Push-based模式，而后者是Pull-based的模式，
+     * Pull 模式对应的是同步的、命令式的程序（使用的是Iterator模式），Push 模式对应的是异步的、非阻塞的、响应式的程序（使用的观察者模式）
+     */
+    @Test
+    public void demo() {
+
+        //Java8 Stream API
+        Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k")
+                .stream()
+                .parallel()
+                .forEach(FluxDemo::println);
     }
 }

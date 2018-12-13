@@ -1,4 +1,4 @@
-package com.ys.autoconfigure.bootstrapt;
+package com.ys.autoconfigure.bootstrap;
 
 import com.ys.autoconfigure.condition.ConditionalOnSystemProperty;
 import org.springframework.boot.WebApplicationType;

@@ -1,4 +1,4 @@
-package com.ys.autoconfigure.bootstrapt;
+package com.ys.autoconfigure.bootstrap;
 
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

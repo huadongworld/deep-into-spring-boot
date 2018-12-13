@@ -1,4 +1,4 @@
-package com.ys.autoconfigure.bootstrapt;
+package com.ys.autoconfigure.bootstrap;
 
 import com.ys.autoconfigure.service.CalculateService;
 import org.springframework.boot.WebApplicationType;

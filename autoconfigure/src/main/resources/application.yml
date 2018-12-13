@@ -1,0 +1,15 @@
+server:
+#  String
+  platform: miniprogram
+#  List 1:
+  headCode:
+    - 140
+    - 150
+#  List 2:
+  domain: https://test-car.realscloud.com,https://cl.realscloud.com
+#  Map
+  relate:
+    prod: 150
+    test: 140
+
+

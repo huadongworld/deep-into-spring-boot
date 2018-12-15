@@ -8,7 +8,10 @@ com.ys.application.context.HelloWorldApplicationContextInitializer
 org.springframework.context.ApplicationListener=\
 com.ys.application.listener.AfterHelloWorldApplicationListener,\
 com.ys.application.listener.HelloWorldApplicationListener,\
-com.ys.application.listener.BeforeConfigFileApplicationListener
+com.ys.application.listener.BeforeConfigFileApplicationListener,\
+com.ys.application.event.ApplicationPreparedEventListener,\
+com.ys.application.event.ApplicationReadyEventListener,\
+com.ys.application.event.ApplicationStartedEventListener
 
 # 运行监听器
 org.springframework.boot.SpringApplicationRunListener=\

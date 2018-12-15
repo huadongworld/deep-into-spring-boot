@@ -1,1 +1,5 @@
 name: 大圣
+logging:
+  level:
+    com.ys.application.event: debug
+

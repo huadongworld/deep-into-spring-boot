@@ -59,7 +59,7 @@ public class FluxDemo {
 
                     @Override
                     public void onNext(String s) {
-                        if(count==2){
+                        if (count == 2) {
                             throw new RuntimeException("故意抛异常！");
                         }
                         println(s);
